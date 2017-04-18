@@ -1,0 +1,302 @@
+body{
+    /*导航栏fixed效果留出*/
+    /*padding-top:50px;*/
+    /*font-family:"微软雅黑,宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+
+}
+
+ul li{
+    /*list-style: none;*/
+}
+
+/*主体排版调整*/
+#main{
+     overflow-x: hidden;
+     padding: 30px;
+ }
+/*导航栏的链接状态*/
+.a_default{
+    color: #9d9d9d;
+}
+.a_active{
+    color: #FFFFFF;
+}
+
+/*主体内容调整*/
+#content{
+    padding: 0 30px 0 15px;
+}
+
+/*侧边栏自定义的thumbnail*/
+.sidebar-thumbnail{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+.sidebar-thumbnail .item-title{
+    width:100%;
+    font-size:20px;
+    /*background-color: rgba(51,122,183,0.4);*/
+    background-color: #333;
+    color: #F3FAFA;
+    padding:4px 0 4px 8px;
+    border-radius:4px 4px 0 0;
+}
+
+.sidebar-thumbnail .item-content{
+    padding:4px 4px 4px 8px;
+    font-size: 19px;
+    /*background-color: rgba(51,122,183,0.1);*/
+}
+
+.sidebar-thumbnail img{
+    width:100%;
+}
+/*侧边栏自定义的thumbnail*/
+
+/*博文缩略图自定义的thumbnail*/
+.blog-thumbnail{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/*博文缩略图自定义的thumbnail*/
+
+/*文章详情页主布局*/
+.articleDetail .articleTitle{
+    text-align: center;
+}
+.articleDetail .relativeInfo{
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.articleDetail .articleContent{
+    padding: 10px 20px 0 20px;
+}
+.articleDetail .articleContent p{
+    line-height: 28px;
+}
+.articleDetail .articleContent img{
+    /*width:100%;*/
+    /*height: 100%;*/
+}
+.articleBar{
+    padding:10px 20px 10px 20px;
+    font-size: 18px;
+    line-height: 30px;
+    border-top: 1px solid #f7f7f7;
+}
+.articleBar a{
+    margin-right: 15px;
+    text-decoration: none;
+}
+/*文章详情页主布局*/
+
+/*评论框*/
+.commentBox{
+    position: relative;
+}
+.outBorder{
+    width:100%;
+    height: 140px;;
+    padding:0.5%;
+    border:2px solid #337ab7;
+    border-radius: 4px;
+    position: relative;
+}
+.outBorder .headPortrait{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left:-25px;
+    top:-15px;
+    z-index: 1;
+    border:1px solid #337ab7;
+}
+.headPortrait img{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.outBorder .innerBorder{
+    width:100%;
+    height:100%;
+    border:2px solid #337ab7;
+    border-radius: 4px;
+}
+.outBorder .commentContent{
+    width:100%;
+    height: 70%;
+    padding: 2% 10% 3% 10%;
+    overflow-y: hidden;
+    color: #337ab7;
+    font-weight: bold;
+}
+.outBorder .commentContent:focus{
+    outline: none;
+}
+.outBorder .additional{
+    width:100%;
+    height:30%;
+    position: relative;
+    padding:0 1% 1% 4%;
+}
+.outBorder .additional img{
+    position: absolute;
+    left: -5px;
+    bottom:-10px;
+    z-index: -1;
+}
+.outBorder .additional .glyphicon-picture{
+    font-size:20px;
+    color: #BBBBBB;
+}
+.outBorder .additional .glyphicon-picture:hover{
+    font-size: 22px;
+    color: #337ab7;
+}
+.commentBox #publishComment{
+    /*width:82px;*/
+    /*height:28px;*/
+    margin-bottom: 10px;
+}
+
+.commentTextarea{
+    display: inline-block;
+    width: 100%;
+    min-height: 60px;
+    max-height: 300px;
+    _height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    outline: 0;
+    border: 1px solid #a0b3d6;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 2px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*border-color: rgba(82, 168, 236, 0.8);*/
+    /*box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);*/
+}
+.commentButton{
+    text-align: right;
+    padding:5px 10px 5px 10px;
+}
+/*评论框*/
+
+/*回到顶部样式*/
+.goTop{
+    width:40px;
+    height:40px;
+    position: fixed;
+    right:80px;
+    bottom:30px;
+    display: none;
+}
+.goTop a{
+    display: block;
+    width:40px;
+    height:40px;
+    background-image: url("/images/goTop_default.png");
+}
+.goTop a:hover{
+    background-image: url("/images/goTop_activate.png");
+}
+/*回到顶部样式*/
+
+/*评论列表样式*/
+.commentList{
+    margin:20px 0 20px 0;
+}
+.commentList .commentBlade{
+    padding: 10px 5px 10px 5px;
+    border-top:2px solid #2e6da4;
+}
+
+.userHeadPic{
+    border-radius: 50%;
+    z-index: 1;
+    border: 1px solid #337ab7;
+    float: left;
+}
+.floorHost{
+    padding-top: 10px;
+}
+.floorHost .userHeadPic{
+    width: 40px;
+    height: 40px;
+}
+.floor .userHeadPic{
+    width: 30px;
+    height:30px;
+}
+.userHeadPic img{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mainComment{
+    margin-left: 50px;
+    border:1px solid #C4C4C4;
+    background-color: #F7F7F7;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius: 10px;
+}
+.mainComment .userName{
+    font-weight:bold;
+    color: #444444;
+}
+.userName p span{
+    color: #337ab7;
+}
+
+.usercomment{
+    padding:10px;
+}
+.mainComment .commentRelational{
+    margin-left: 10px;
+}
+.mainComment .commentRelational span,a{
+    display: inline-block;
+    margin-right: 20px;
+}
+.mainComment .commentRelational a{
+    /*margin-right: 20px;*/
+    line-height: 25px;
+}
+
+.floors{
+    border:1px solid #C4C4C4;
+    /*background-color: #F7F7F7;*/
+    margin-left: 50px;
+    margin-top: 10px;
+    padding:10px;
+}
+
+.moreComment{
+    text-align: center;
+    font-size: 25px;
+}
+.moreReply{
+    padding-top: 10px;
+}
+/*评论列表样式*/

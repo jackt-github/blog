@@ -1,0 +1,55 @@
+body{
+    /*padding-top:50px;*/
+    font-family:"宋体", "Microsoft YaHei", Helvetica, "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun,  Heiti, "黑体", sans-serif;
+    overflow: hidden;
+}
+#adminContentWrap{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:640px;
+}
+#adminContent{
+    height:100%;
+}
+
+/*admin的sidebar*/
+.sidebar{
+    background-color: #f7f7f7;
+    min-height:700px;
+}
+.menu{
+    color: #6F6F6F;
+    width:100%;
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.menu a:hover{
+    color: #000000;
+}
+/*侧边栏的链接状态*/
+.a_default{
+    color: #6F6F6F;
+}
+.a_active{
+    color: #000;
+}
+.firMenu{
+    height:40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.secMenu{
+    height:30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight:bold;
+    text-decoration: none;
+    padding-left: 50px;
+}
+/*admin的sidebar*/
